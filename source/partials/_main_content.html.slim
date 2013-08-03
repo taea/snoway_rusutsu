@@ -1,0 +1,14 @@
+- f = f[1]
+section.section
+  h2
+    == link_to f.url, target: '_blank' do
+      i.icon-thumbs-up-alt
+      == f.title
+      i.icon-angle-right
+  .image == link_to image_tag(f.image, alt: f.title), f.url, target: '_blank'
+  p.text
+    == f.body
+  p.link-detail
+    == link_to f.url do
+      | 詳しくはこちら
+      i.icon-caret-right

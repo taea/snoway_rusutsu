@@ -1,0 +1,81 @@
+#sub
+  .section
+    margin-bottom: 30px
+
+.user-box-section
+  +pie-clearfix
+  background: $main-color
+  color: white
+  padding: 10px
+  a
+    color: rgba(255,255,255,.9)
+  h2
+    padding: 0
+    border: none
+    margin-bottom: 2px
+    a
+      color: rgba(255,255,255,.9) !important
+      &:hover
+        color: white !important
+  .user-box-header
+    +pie-clearfix
+    margin-bottom: 10px
+  .thumbnail
+    @extend .circle-thumbnail-m
+    margin: 0
+      right: 10px
+    float: left
+  .user-box-section-right
+    float: right
+    width: $side-width - 80px
+  .mood-message
+    margin: 0
+    a
+      display: block
+      font-size: $size-11px
+      background: white
+      +border-radius(4px)
+      padding: 5px 7px
+      color: $text-color
+      +balloon-left($color: white, $top: 7px)
+      &:hover
+        background: $light-yellow
+        +balloon-left($color: $light-yellow, $top: 7px)
+      i
+        +absolute
+        top: 7px
+        right: 5px 
+        font-size: 150%
+        color: $icon-color
+  .user-box-data
+    color: white
+    +pie-clearfix
+    i
+      color: rgba(255,255,255,.5)
+      font-size: 130%
+      margin-right: 3px
+    h3
+      color: white
+      font-size: $size-11px
+      font-weight: normal
+      margin-bottom: 0
+      a
+        color: rgba(255, 255, 255, .9)
+        &:hover
+          color: white
+          i
+            color: white
+    li
+      width: 60px
+      float: left
+      margin-right: 10px
+    p
+      margin: 0
+      padding: 0
+      font-size: $size-11px
+      a
+        color: rgba(255,255,255,.9)
+        &:hover
+          color: white
+      .num
+        font-size: 170%

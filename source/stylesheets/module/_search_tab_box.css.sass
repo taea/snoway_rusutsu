@@ -1,0 +1,72 @@
+.tab-box.search-tab-box
+  .tab-box-content
+    h3
+      font-size: $size-13px
+      color: $sub-text-color
+    &.access
+      .search-access-step-wrapper
+        +pie-clearfix
+        margin:
+          bottom: 10px
+          top: 10px
+        .search-access-step
+          width: 110px
+          background: $base-color
+          padding: 15px
+          float: left
+          margin-right: 25px
+          height: 70px
+          +balloon-right($size: 10px, $color: $base-color, $top: 35px)
+          .inner
+            margin-bottom: 5px
+          select
+            width: 50px
+            border: 1px solid $line-color
+            background: white
+        .radio-button-list
+          font-size: $size-14px
+        input[type="submit"] 
+          margin-top: 20px
+          width: 70px
+      .search-check-box-list
+        li
+          +pie-clearfix
+          padding:
+            top: 5px
+          border-bottom: 1px dotted $line-color
+        h3
+          width: 100px
+          float: left
+          margin:
+            bototm: 0
+            right: 10px
+            top: 5px
+        .checkbox-list
+          li
+            border: none
+            float: left
+            margin:
+              bottom: 0
+              right: 15px
+    &.event        
+      .calendar
+        background: $base-color
+        width: ($main-width - 10px - 10px) / 2 - 10px
+        float: left
+      .search-event-left 
+        width: ($main-width - 10px - 10px) / 2 - 10px
+        float: right
+
+    &.review
+      .item-list
+        width: ($main-width - 10px - 10px) / 2 - 10px
+        float: left
+        li
+          +pie-clearfix
+          padding:
+            bottom: 5px
+          border-bottom: 1px dotted $line-color
+          float: none
+        .ranking, .image
+          float: left
+          margin-right: 1px

@@ -1,0 +1,49 @@
+.item-list
+  +pie-clearfix
+  li
+    width: 140px
+    float: left
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+    .image
+      margin:
+        bottom: 10px
+      a
+        display: block
+        width: 140px
+        height: 105px
+        +relative
+        overflow: hidden
+        +border-radius(4px)
+        img
+          +absolute
+          width: 140px
+          +border-radius(4px)
+        &:hover
+          +border-radius(4px)
+          img
+            +opacity(.8)
+            +border-radius(4px)
+    .title
+      line-height: 1.4
+      margin-bottom: 5px
+      a
+        font-weight: bold
+        span
+          font-weight: normal
+    p
+      font-size: $size-12px
+      line-height: 1.4
+      margin: 0
+      color: $sub-text-color
+      a
+        color: $sub-text-color
+        &:hover
+          color: $hover-color
+      i
+        margin-right: 3px
+    .ranking
+      font-size: $size-12px
+      .num
+        font-size: 190%

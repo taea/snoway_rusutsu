@@ -1,0 +1,35 @@
+javascript:
+  jQuery(function($){
+    $('.hero-list').unslider({
+      speed: 1000,               //  The speed to animate each slide (in milliseconds)
+      delay: 20000,              //  The delay between slide animations (in milliseconds)
+      keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+      dots: true,               //  Display dot navigation
+    });
+  });
+
+.hero-list
+  ul
+    - data.hero.hero.each do |hero|
+      - hero = hero[1]
+      - review = hero.user_review
+      li class="hero hero-#{"#{hero.id}" if hero.present?}"
+        .copy
+          h2 == hero.headline
+          p == hero.copy
+        .user-review
+          p.sub-title
+            i.icon-comment
+            | User Review
+          h3 == link_to review.title, review.url, target: '_blank'
+          .point
+            - review.point.to_i.times do
+              i.icon-star
+            - if review.point.to_i < 5
+              - (5 - review.point.to_i).times do
+                i.icon-star.disabled
+            span.num == review.point
+          p.comment == review.comment
+          p.link-more == link_to "もっと見る#{content_tag :i, nil, class: 'icon-double-angle-right'}", review.url, target: '_blank'
+          p.user-name == link_to "by #{review.user_name}さん", review.url, target: '_blank'
+        .circle-thumbnail-m == link_to image_tag(review.user_image, alt: review.title), review.url, target: '_blank'

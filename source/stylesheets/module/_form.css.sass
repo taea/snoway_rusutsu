@@ -1,0 +1,113 @@
+/* ==========================================================================
+/* form
+/* --------------------------------------------------------------------------
+button, input[type="submit"]
+  @extend .button
+  +transition-duration(.3s)
+  &:hover
+    cursor: pointer
+
+button.button
+  @extend .button
+
+textarea, input[type="text"], input[type="url"], input[type="email"], input[type="search"], input[type="number"], input[type="tel"]
+  +reset
+  +box-shadow(none)
+  +box-deboss
+  background: #DDD
+  border: 1px solid rgba(0,0,0,.1) !important
+  padding: 5px
+  +border-radius(4px)
+  font-size: $size-14px
+  line-height: 1.4em
+  +box-shadow(rgba(0,0,0,.1) -1px 1px 1px inset, rgba(255,255,255,1) -1px 1px 0)
+  +transition-duration(.3s)
+  outline: 0px none black
+  &:focus
+    background: #FFF
+    color: #000
+    border: 1px solid #52bcec
+    +box-shadow(rgba(0,0,0,.1) -1px 1px 1px inset, $hover_color 0 0 10px)
+  &[disabled='disabled']
+    +reset
+    background: $zurui-gray
+    padding: 5px
+  &.w300px
+    width: 300px
+
+select
+  border: 1px solid $line-color
+  font-size: $size-14px
+  padding: 5px 10px
+  background: #EEE
+  +gradient-top-lighten(#EEE)
+  +border-radius(4px)
+  &:focus
+    +gradient-top-lighten($light-yellow)
+
+input[type="radio"], input[type="checkbox"]
+  font-size: $size-14px
+
+.acInput
+  +num-font
+
+.dummy-textarea
+  display: block
+  +box-deboss
+  background: #DDD
+  border: 1px solid rgba(0,0,0,.1)
+  padding: 20px
+  +border-radius(4px)
+  font-size: $size-14px
+  line-height: 1.4em
+  +box-shadow(rgba(0,0,0,.1) -1px 1px 1px inset, rgba(255,255,255,1) -1px 1px 0)
+
+input[type="button"]:disabled, input[type="submit"]:disabled, button:disabled
+  +opacity(0.2)
+  +ts-000(0)
+  +box-shadow(none)
+  background: #999
+  &:hover
+    background: #999
+    +box-shadow(none)
+    cursor: default
+
+.caption-required
+  color: $red
+  font-weight: normal
+  font-size: 80%
+  margin-left: 3px
+
+input[type="search"]
+  -webkit-appearance: textfield
+  -webkit-box-sizing: content-box
+  &:focus
+    outline-offset: -2px
+input[type="search"]::-webkit-search-decoration
+  display: none
+  -webkit-appearance: searchfield-decoration
+  display: inline-block
+
+label.disabled, .label.disabled
+  +opacity(.4)
+
+.checkbox-list, .radio-button-list
+  label
+    i
+      font-size: 140%
+      margin-right: 3px
+      color: $icon-color
+    &:hover
+      color: $hover-color 
+      i
+        color: $hover-color
+  input:checked+label
+    color: #000
+    font-weight: bold
+    i
+      color: $sub-text-color
+  li
+    margin-bottom: 3px
+  input
+    margin-right: 3px
+    

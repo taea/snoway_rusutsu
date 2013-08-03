@@ -1,0 +1,43 @@
+.section-dl
+  a
+    display: block
+    +pie-clearfix
+    padding: 5px 0
+    border-bottom: 1px dotted $line-color
+    +relative
+    &:hover
+      i
+        color: $hover-color
+  dt, dd
+    float: left
+    margin: 0
+    padding: 0
+  dt
+    margin-right: 10px
+  i
+    color: $icon-color
+    margin-right: 3px
+
+  &.snow-conditions
+    dt
+      width: 160px
+      +nowrap
+    .depth
+      width: 45px
+      text-align: right
+      margin-right: 5px
+      +nowrap
+    .condition
+      width: 80px
+      +nowrap
+
+  &.open-information
+    dt
+      width: $side-width - 50px
+      +nowrap
+    .date
+      +num-font
+      font-size: 110%
+      +absolute
+      top: 5px
+      right: 0

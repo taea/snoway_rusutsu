@@ -1,0 +1,45 @@
+*
+  font-size: 100%
+  padding: 0
+  margin: 0
+  word-break: break-all
+
+body
+  text-align: center
+  font-size: 13px
+  +main-font
+  background: $base-color url(/images/tileable_wood_texture.png) repeat 0 0
+  color: $text-color 
+  line-height: 1.6
+
+strong
+  font-weight: bold
+
+/* リンク色設定
+a
+  +transition-duration(.3s)
+  &:visited
+    color: $link-color
+    text-decoration: none
+  &:active
+    color: $hover-color
+    text-decoration: none
+  &:link
+    color: $link-color
+    text-decoration: none
+  &:hover
+    color: $hover-color
+    text-decoration: none
+
+i.icon-external-link
+  font-size: 80%
+  +relative
+  top: 0px
+  margin-left: 2px
+
+p
+  color: $text-color
+
+.num
+  +num-font
+  font-size: 120%

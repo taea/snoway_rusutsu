@@ -1,0 +1,47 @@
+.tab-box
+
+.tab-box-nav
+  +pie-clearfix
+  height: 32px
+  li
+    float: left
+    background: $base-color
+    +relative
+    margin-right: 3px
+    height: 32px
+    line-height: 32px
+    padding: 0 15px
+    i
+      color: $icon-color
+      font-size: 150%
+      +relative
+      margin-right: 3px
+      top: 2px
+      &.lsf
+        font-size: 160%
+    &:hover
+      cursor: pointer
+      background: $main-color
+      color: white
+      i
+        color: rgba(255,255,255,.5)
+    &.current
+      cursor: auto
+      background: $main-color
+      color: white
+      top: -2px
+      height: 34px
+      font-weight: bold
+      i
+        color: rgba(255,255,255,.5)
+
+.tab-box-content-wrapper
+  border: 5px solid $main-color
+  padding: 10px
+
+.tab-box-content
+  +pie-clearfix
+
+.tab-box-content-list li
+  .tab-box-content
+    +none

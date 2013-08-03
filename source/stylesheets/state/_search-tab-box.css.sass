@@ -1,0 +1,209 @@
+.tab-box.search-tab-box
+  $half-width: ($main-width - 10px - 10px) / 2 - 15px
+  .tab-box-content
+    h3
+      font-size: $size-13px
+      color: $sub-text-color
+    &.access
+      .search-access-step-wrapper
+        +pie-clearfix
+        margin:
+          bottom: 10px
+          top: 10px
+        .search-access-step
+          width: 110px
+          background: $base-color
+          padding: 15px
+          float: left
+          margin-right: 25px
+          height: 70px
+          +balloon-right($size: 10px, $color: $base-color, $top: 35px)
+          .inner
+            margin-bottom: 5px
+          select
+            width: 50px
+            border: 1px solid $line-color
+            background: white
+        .radio-button-list
+          font-size: $size-14px
+        input[type="submit"] 
+          margin-top: 20px
+          width: 70px
+      .search-check-box-list
+        li
+          +pie-clearfix
+          padding:
+            top: 5px
+          border-bottom: 1px dotted $line-color
+        h3
+          width: 100px
+          float: left
+          margin:
+            bototm: 0
+            right: 10px
+            top: 5px
+        .checkbox-list
+          li
+            border: none
+            float: left
+            margin:
+              bottom: 0
+              right: 15px
+    &.event        
+      .calendar
+        background: $base-color
+        width: $half-width
+        float: left
+      .search-event-left 
+        width: $half-width
+        float: right
+
+    &.review
+      .inner
+        +pie-clearfix
+      .item-list
+        width: $half-width + 50px
+        float: left
+        li
+          width: $half-width + 50px
+          +pie-clearfix
+          padding:
+            bottom: 5px
+            top: 10px
+          border-bottom: 1px dotted $line-color
+          float: none
+          &:last-child
+            border-bottom: none
+        .ranking, .image
+          float: left
+          margin-right: 5px
+        .image
+          width: 80px
+          height: 60px
+          +border-radius(3px)
+          a
+            +border-radius(3px)
+            width: 80px
+            height: 60px
+            img
+              +border-radius(3px)
+              width: 80px
+              height: 60px
+        .title
+          a
+            display: block
+            width: 200px
+            +nowrap
+          margin-bottom: 3px
+        p
+          width: 200px
+          +nowrap
+        &.end
+          float: right
+          width: ($main-width - 10px - 10px) / 2 - 15px - 50px
+          li
+            width: ($main-width - 10px - 10px) / 2 - 15px - 50px
+
+      .inner.section-list-wrapper
+        margin-top: 10px
+      .section-list
+        width: $half-width
+        float: left
+        &.end
+          float: right
+
+    &.area
+      +relative
+      z-index: 1
+      .search-map-wrapper
+        width: $half-width
+        float: left
+      .search-map-wrapper
+        li
+          cursor: pointer
+          &.current
+            color: red
+          &.disabled
+            color: $main-color
+      .search-area-right-wrapper
+        width: $half-width
+        float: right
+      .search-area-list
+        padding-top: 10px
+      .search-area-default
+        +pie-clearfix
+        +relative
+        z-index: 1
+        height: 210px
+      .search-area-summary-list
+        +absolute
+        top: 0
+        left: 0
+      .search-area-summary
+        +none
+        +pie-clearfix
+        +absolute
+        width: $main-width - 30px
+        top: 0
+        left: 0
+        z-index: 2
+      .search-area-summary-content
+        background: $base-color
+        width: $half-width - 30px
+        height: 190px
+        padding: 15px
+          top: 5px
+        +balloon-left($color: $base-color, $size: 10px, $top: 90px)
+        +absolute
+        z-index: 3
+        top: 0
+        right: 0
+        h3
+          a
+            display: block
+            color: $text-color
+            font-weight: normal
+            +relative
+            padding:
+              bottom: 5px
+            border-bottom: 1px solid #ddd
+            margin-bottom: 5px
+            strong
+              font-weight: bold
+              color: $link-color
+            .count
+              color: $link-color
+              +absolute
+              top: 0
+              right: 0
+            &:hover
+              color: $hover-color
+        .float-list
+          font-size: $size-12px
+          li
+            border-right: 1px solid #ddd
+        .remove-button
+          text-align: right
+          font-size: $size-16px
+        .section-dl.search-gerande-list
+          font-size: $size-12px
+          a
+            border-bottom: 1px dotted #ddd
+            padding:
+              top: 3px
+              bottom: 3px
+          .point
+            +absolute
+            top: 3px
+            right: 0
+            i.icon-star
+              font-size: 100%
+              margin-right: -1px
+          dt
+            width: 150px
+            +nowrap
+      .remove-layer
+        +pie-clearfix
+        cursor: pointer
+        width: 100%
+        height: 210px

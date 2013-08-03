@@ -1,0 +1,32 @@
+.ranking-list
+  border-bottom: 1px dotted $line-color
+  +pie-clearfix
+  padding-bottom: 10px
+  li
+    width: 80px
+    float: left
+    margin-right: 25px
+    text-align: center
+    &:last-child
+      margin-right: 0
+    .thumbnail
+      @extend .circle-thumbnail-l
+      margin-bottom: 5px
+      ul
+        li
+          float: none
+          margin: 0
+          padding: 0
+    .ranking
+      font-size: $size-11px
+      color: $text-color
+      .num
+        font-size: 200%
+    .username
+      font-size: 12px
+    .value
+      @extend .ranking
+      .num
+        font-size: 160%
+      color: $link-color
+      

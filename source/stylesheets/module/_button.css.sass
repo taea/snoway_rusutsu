@@ -1,0 +1,10 @@
+.button
+  +gradient-top-lighten($main-color, 10%)
+  border: 1px solid rgba(0,0,0,.1)
+  color: white
+  padding: 10px 15px
+  +border-radius(4px)
+  font-size: $size-13px
+  &:hover
+    +gradient-top-lighten(lighten($main-color, 5%), 10%)
+  
