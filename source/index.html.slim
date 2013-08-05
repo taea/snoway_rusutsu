@@ -1,19 +1,6 @@
 ---
 title: Hokkaido Powder Snow ルスツリゾート - スノーウェイ
 ---
-
-nav.nav
-  ul
-    li.current
-      span.en Ski Resort
-      |
-        スキー場
-    li
-      == link_to 'accomodiations.html', relative: true do
-        span.en Accomodiations
-        |
-          宿泊
-
 #contents
   #main
     section.section
@@ -28,5 +15,4 @@ nav.nav
     
     - data.ski_resort.main_content.each do |f|
       == partial '/partials/main_content', locals: { f: f }
-
   == partial 'partials/side'

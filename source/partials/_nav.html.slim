@@ -1,0 +1,7 @@
+nav.nav
+  ul
+    - data.nav.pages.each do |page|
+      - page = page[1]
+      li class="#{'current' if "#{page_classes}" == page.name}"
+        - title_for_nav = "#{content_tag :span, page.title_en, class: 'en'}#{page.title}"
+        == "#{page_classes}" == page.name ? title_for_nav : (link_to title_for_nav, "#{page.name}.html", relative: true)

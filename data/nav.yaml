@@ -1,0 +1,9 @@
+pages:
+  1:
+    name: 'index'
+    title: 'スキー場'
+    title_en: 'Ski Resort'
+  2:
+    name: 'accomodiations'
+    title: '宿泊'
+    title_en: 'Accomodiations'
