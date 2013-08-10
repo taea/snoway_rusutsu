@@ -4,7 +4,7 @@ title: Hokkaido Powder Snow ルスツリゾート - 宿泊 - スノーウェイ
 #contents
   #main
     .section.reservation-module
-      | 予約モジュール
+      iframe.iframe-resavation-module src="http://snoway.jp/feature/rusutsu/yoyaku.html" scrolling="no"
     - data.accomodiations.main_content.each do |f|
       == partial 'partials/main_content', locals: { f: f }
   == partial 'partials/side'
