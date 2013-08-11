@@ -10,13 +10,12 @@ javascript:
 
 .hero-list
   ul
-    - data.hero.hero.each do |hero|
-      - hero = hero[1]
-      - review = hero.user_review
-      li class="hero hero-#{"#{hero.id}" if hero.present?}"
+    - data.hero.contents.each do |content|
+      - review = content.user_review
+      li class="hero hero-#{"#{content.id}" if content.present?}"
         .copy
-          h2 == hero.headline
-          p == hero.copy
+          h2 == content.headline
+          p == content.copy
         .user-review
           p.sub-title
             i.icon-comment

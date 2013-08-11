@@ -6,13 +6,12 @@ title: Hokkaido Powder Snow ルスツリゾート - スノーウェイ
     section.section
       h2 == "#{content_tag :i, nil, class: 'icon-file'} ルスツリゾート ニュース＆トピック"
       ul.section-list
-        - data.news.list.each do |list|
-          - list = list[1]
+        - data.news.lists.each do |list|
           li
             == link_to list.url, target: '_blank' do
               i.icon-angle-right
               == list.title
     
-    - data.ski_resort.main_content.each do |f|
-      == partial '/partials/main_content', locals: { f: f }
+    - data.ski_resort.main_contents.each do |content|
+      == partial '/partials/main_content', locals: { content: content }
   == partial 'partials/side'

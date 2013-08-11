@@ -1,6 +1,5 @@
-hero:
-  1:
-    id: 1
+contents:
+  - id: 1
     headline: 'Hokkaido Powder Snow'
     copy: '世界中が絶賛し憧れる、北海道のふかふかパウダースノーを、ルスツで。'
     user_review:
@@ -10,8 +9,7 @@ hero:
       comment: 'まあ、晴れていたのが一番の原因だと思いますが。<br />斜面変化もあり、長いコース、短いコース。圧雪、非圧雪、コブ。と飽きなく楽しめます。<br />何しろゴンドラだけでも何台ある？数え切れないくらいです。<br />お部屋も食事も大満足。従業員さんも良く教育されている（上からですみません）。東洋・西洋両方の外人さんもたくさん来ていました。<br />長く滞在して、コースを満喫したいスキー場です。'
       user_name: 'とし和尚'
       user_image: 'http://snoway.jp/img/user/l/00/09/906.jpg'
-  2:
-    id: 2
+  - id: 2
     headline: 'Hokkaido Powder Snow'
     copy: '世界中が絶賛し憧れる、北海道のふかふかパウダースノーを、ルスツで。'
     user_review:
@@ -22,8 +20,7 @@ hero:
 そして粉雪のパウダースノー、深雪を十分堪能させていただいてます。<br />脚力低下にともない『イゾラNo1』コースはつらいですね、脚力強化せねばと痛切に思った今日この頃です。'
       user_name: 'opiro772'
       user_image: 'http://snoway.jp/img/user/l/00/07/737.jpg'
-  3:
-    id: 3
+  - id: 3
     headline: 'Hokkaido Powder Snow'
     copy: '世界中が絶賛し憧れる、北海道のふかふかパウダースノーを、ルスツで。'
     user_review:
@@ -33,8 +30,7 @@ hero:
       comment: 'ルスツリゾートは旧大和ルスツコース、イーストコース、ウェストコースとゲレンデが変化に富んで、いろいろ楽しめます。'
       user_name: 'しーはいる'
       user_image: 'http://snoway.jp/img/common/snower_dammy.gif'
-  4:
-    id: 4
+  - id: 4
     headline: 'Hokkaido Powder Snow'
     copy: '世界中が絶賛し憧れる、北海道のふかふかパウダースノーを、ルスツで。'
     user_review:
