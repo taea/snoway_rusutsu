@@ -1,7 +1,6 @@
 nav.nav
   ul
     - data.nav.pages.each do |page|
-      - page = page[1]
-      li class="#{'current' if "#{page_classes}" == page.name}"
+      li class="#{'current' if page_classes == page.name}"
         - label = "#{content_tag :span, page.title_en, class: 'en'}#{page.title}"
-        == "#{page_classes}" == page.name ? label : (link_to label, "#{page.name}.html", relative: true)
+        == page_classes == page.name ? label : (link_to label, "#{page.name}.html", relative: true)
