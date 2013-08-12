@@ -2,7 +2,16 @@ aside#sub
   .section.ad.lectangle
     == link_to image_tag('/images/banner.jpg', alt: 'Powder Snow Hokkaido ルスツ'), 'http://rusutsu.co.jp/winterlan/', target: '_blank'
   .section.facebook-likebox  
-    | Facebook Likebox（後送）
+    .fb-like-box data-href="https://www.facebook.com/Rusutsu" data-width="300" data-height="400" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"
+    #fb-root
+    javascript:
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=205101869620603";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
   .section.twitter-widget
     a class="twitter-timeline" href="https://twitter.com/rusutsuitter" data-widget-id="361000176107786240"
       | @rusutsuitter からのツイート
