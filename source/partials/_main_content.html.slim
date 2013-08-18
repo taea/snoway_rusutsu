@@ -1,13 +1,13 @@
 section.section
   h2
-    == link_to content.url, target: '_blank' do
+    == link_to content.url, target: '_blank', onclick: content.onclick do
       i.icon-thumbs-up-alt
       == content.title
       i.icon-angle-right
-  .image == link_to image_tag(content.image, alt: content.title), content.url, target: '_blank'
+  .image == link_to image_tag(content.image, alt: content.title), content.url, target: '_blank', onclick: content.onclick
   p.text
     == content.body
   p.link-detail
-    == link_to content.url do
+    == link_to content.url, target: '_blank', onclick: content.onclick do
       | 詳しくはこちら
       i.icon-caret-right
