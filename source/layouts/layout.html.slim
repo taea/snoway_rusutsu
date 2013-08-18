@@ -21,16 +21,14 @@ html
       gads.async = true;
       gads.type = 'text/javascript';
       var useSSL = 'https:' == document.location.protocol;
-      gads.src = (useSSL ? 'https:' : 'http:') +
-      '//www.googletagservices.com/tag/js/gpt.js';
+      gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
       var node = document.getElementsByTagName('script')[0];
       node.parentNode.insertBefore(gads, node);
       })();
 
     javascript:
       googletag.cmd.push(function() {
-      googletag.defineSlot('/5761041/snoway_rusutsu_300x250', [300, 250],
-      'div-gpt-ad-1376355002116-0').addService(googletag.pubads());
+      googletag.defineSlot('/5761041/snoway_rusutsu_300x250', [300, 250], 'div-gpt-ad-1376355002116-0').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
       });
